@@ -7,12 +7,12 @@ from matplotlib import style
 from dateutil import parser as dt_parser
 
 
-url = "https://ethereum.miningpoolhub.com/index.php?page=api&action=getuserworkers&api_key=1f3ab92a96dd360ab21566512de09b4738005519b29d958ee739e&id=55998"
+#url = "https://ethereum.miningpoolhub.com/index.php?page=api&action=getuserworkers&api_key=1f3ab92a96dd360ab21566512de09b4738005519b29d958ee739e&id=55998"
 turl = "https://api.telegram.org/bot"
 token = '537569389:AAHcrQi9s7NLZKzeixwFpTrvot-E8C5z2YE'
 chat_id = '-112425623'
-r = requests.get(url)
-data = json.loads(r.text)
+#r = requests.get(url)
+#data = json.loads(r.text)
 filename = time.strftime("%Y%m%d-%H%M%S") + ".jpg"
 
 
@@ -161,7 +161,7 @@ def socket_job():
 
 #Проверка хэшрейта по API (Если хэш 0 записывает в файл, если в файле больше 4 строк - отправка сообщения)
 def api_job():
-    url = "https://ethereum.miningpoolhub.com/index.php?page=api&action=getuserworkers&api_key=1f3ab92a96dd360abcf9e86e04d3456c1f12de09b4738005519b29d958ee739e&id=590194"
+    url = "https://ethereum.miningpoolhub.com/index.php?page=api&action=getuserworkers&api_key=1f3ab92a96dd36034234231f12de09b4738005519b29d958ee739e&id=534194"
     r = requests.get(url)
     data = json.loads(r.text)
     time_job = time.strftime("%d.%m.%Y-%H:%M:%S")
