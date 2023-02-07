@@ -7,12 +7,12 @@ from matplotlib import style
 from dateutil import parser as dt_parser
 
 
-#url = "https://ethereum.miningpoolhub.com/index.php?page=api&action=getuserworkers&api_key=1f3ab92a96dd360ab21566512de09b4738005519b29d958ee739e&id=55998"
+url = "https://ethereum.miningpoolhub.com/index.php?page=api&action=getuserworkers&api_key=1f3ab92a96dd360ab21566512de09b4738005519b29d958ee739e&id=55998"
 turl = "https://api.telegram.org/bot"
 token = '537569389:AAHcrQi9s7NLZKzeixwFpTrvot-E8C5z2YE'
 chat_id = '-112425623'
-#r = requests.get(url)
-#data = json.loads(r.text)
+r = requests.get(url)
+data = json.loads(r.text)
 filename = time.strftime("%Y%m%d-%H%M%S") + ".jpg"
 
 
